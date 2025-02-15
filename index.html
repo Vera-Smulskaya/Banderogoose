@@ -10,7 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preload" href="./img/gus-anim.gif" as="image">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 
@@ -18,7 +19,7 @@
   <section class="main-page">
 
     <div class="wrapper">
-      <img src="img/logo.svg" alt="Логотип" сlass="goit-logo">
+      <img src="img/logo.svg" alt="Логотип" class="goit-logo" />
       <div class="main-page-text-container">
         <p class="main-page-hello-text">Доброго вечора, ми з України</p>
         <h1 class="main-page-title">Бандерогусь</h1>
@@ -26,7 +27,7 @@
           Батьківщину та
           підтримую
           позитивний дух народу. Слава Україні!</p>
-        <button class="main-page-btn">Запустити гуся</button>
+        <button class="main-page-btn" id="go-to-form-btn">Запустити гуся</button>
       </div>
 
       <img src="img/gus.svg" alt="Бандерогусь">
@@ -62,6 +63,24 @@
     </div>
 
   </section>
+
+  <section class="form-container">
+    <form action="a" class="form" id="form">
+      <img src="img/trezub.svg" alt="Тризуб" class="form-tryzub" />
+      <h4 class="form-title">Поділися, будь ласка, поштою</h4>
+      <p class="form-descr">та запиши гуся до бандерозагону</p>
+      <div class="form-field form-field-name">
+        <label for="user-name" class="form-field-label">Ім'я</label>
+        <input type="text" id="user-name" class="form-input">
+      </div>
+      <div class="form-field form-field-email">
+        <label for="user-email" class="form-field-label">Email</label>
+        <input type="email" id="user-email" class="form-input">
+      </div>
+      <button type="submit" class="form-btn" id="launch-btn">Запустити гуся</button>
+    </form>
+  </section>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
